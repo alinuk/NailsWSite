@@ -1,0 +1,317 @@
+/*site.css*/
+
+body {
+
+	margin: 0;
+	padding: 0;
+	background: #eee;
+	font-family: "Open Sans";
+	color: #444;
+	height: auto;
+}
+
+header {
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 25px 0;
+	z-index: 999;
+	background-color: black;
+	transition: padding .25s;
+	-webkit-transition: padding .25s;
+	-moz-transition: padding .25s;
+	-ms-transition: padding .25s;
+	-o-transition: padding .25s;
+	
+}
+
+a img {
+	border: 0;
+}
+
+header .inner {
+	display: block;
+	width: 1000px;
+	height: 46px;
+	margin: auto;
+}
+
+h1.logo {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+.nav, .nav ul {
+
+
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	line-height: 1;
+}
+
+.nav {
+
+	display: block;
+	position: relative;
+	width: auto;
+	height: 47px;
+	margin: auto; 
+}
+
+.nav>li {
+
+
+	display: block;
+	position: relative;
+	float: left;
+}
+
+
+.nav ul {
+
+	display: block;
+	position: absolute;
+	top: -9999px;
+	left: -100px;
+	opacity: 0;
+	transition: left .25s ease-in , opacity .25s ease-in;
+}
+
+
+.nav>li>a {
+
+	text-align: center;
+	text-decoration: none;
+	padding: 16px 8px;
+	width: 100px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	color: white;
+	font-size: 16px;
+	display: block;
+	transition: color .25s ease-in;
+	-o-transition: color .25s ease-in;
+	-moz-transition: color .25s ease-in;
+	-webkit-transition: color .25s ease-in;
+	-ms-transition: color .25s ease-in;
+}
+
+
+
+
+
+/***********************submenu******************************/
+
+
+
+.nav ul ul {
+
+	left: 80px;
+}
+
+.nav ul li {
+
+	display: block;
+	position: relative;
+}
+
+.nav>li:hover>a {
+
+font-weight: bold;
+	color: crimson;
+}
+
+.nav>li:hover>ul {
+
+	top: 38px;
+	left: 0px;
+	opacity: 1;
+}
+
+.nav ul li:hover>ul {
+
+	top: 0px;
+	left: 180px;
+	opacity: 1;
+}
+
+.nav ul li:hover>a {
+
+font-weight: bold;
+	color: crimson;
+}
+
+.nav ul li a {
+
+display: block;
+text-decoration: none;
+font-size: 18px;
+padding: 8px 15px 8px 35px;
+color: white;
+background-color: black;
+width: 130px;
+font-weight: 300;
+font-weight: bold;
+font-family: "Open Sans"
+     transition: left .25s ease-in;
+    -o-transition: left .25s ease-in;
+	-moz-transition: left .25s ease-in;
+	-ms-transition: left .25s ease-in;
+	-webkit-transition: left .25s ease-in;
+}
+/**************content***********/
+
+#content {
+
+    background-color: #eee;
+    margin-top: 100px;
+	margin-bottom: 300px;
+	z-index: 1;
+	padding-bottom: 10px;
+	border-bottom: 4px solid #63c0a6;
+	box-shadow: 0 12px 15px rgba(0,0,0,.45);
+	height: 1350px;
+	display: inline-block;
+}
+
+
+
+#content>div {
+
+	margin: auto;
+	width: 920px;
+	padding: 30px;
+	
+}
+
+
+
+#slideshow { 
+    margin: 20px auto; 
+    position: relative; 
+     width: 50px; 
+    height: 50px;
+    padding: 10px; 
+    margin-left: 20px;
+    margin-top: 100px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+    float: left;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    width: 60px;
+    height: 60px;
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+    margin-left: 10px;
+}
+
+ #map {
+        width: 100px;
+        height: 200px;
+        background-color: grey;
+        float: left;
+        display: inline-block;
+    white-space: nowrap;
+    vertical-align: top;
+
+      }
+/************stiling footer****************/
+
+
+#footer {
+
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	height: 320px;
+	z-index: -1;
+	padding: 20px 0;
+	font-size: 14px;
+	color: #fff;
+	background-color: #63c0a6;
+	font-weight: bold;
+}
+
+#footer> .wrapper {
+	margin: auto;
+	width: 980px;
+}
+
+#footer .column {
+
+width: 280px;
+padding: 20px;
+float: left;
+
+}
+
+#footer h4 {
+
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0 0 10px 0;
+}
+
+/************formating footer***********/
+
+
+#footer ul {
+
+	margin: 0;
+	padding: 10px 0;
+	list-style-type: none;
+}
+
+.articles p {
+
+	margin-top: 5px;
+}
+
+#footer a {
+
+	text-decoration: none;
+	color: #d0ece4;
+	transition: color .2s ease-in;
+	-o-transition: color .2s ease-in;
+	-ms-transition: color .2s ease-in;
+	-webkit-transition: color .2s ease-in;
+	-moz-transition: color .2s ease-in;
+}
+
+#footer a:hover {
+
+	color: crimson;
+}
+
+#footer a.title {
+
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.contact_info li {
+
+	padding-bottom: 15px;
+}
+
+.contact_info li span {
+
+	width: 100%;
+	display: inline-block;
+}
+
+/*********end***************/
